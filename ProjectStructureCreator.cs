@@ -58,11 +58,11 @@ public class ProjectStructureCreator : EditorWindow
             if (!AssetDatabase.IsValidFolder(folder))
             {
                 Directory.CreateDirectory(folder);
-                Debug.Log($"✅ Created folder: {folder} // {description}");
+                Debug.Log($" Created folder: {folder} // {description}");
             }
             else
             {
-                Debug.Log($"⚠️ Folder already exists: {folder} // {description}");
+                Debug.Log($" Folder already exists: {folder} // {description}");
             }
         }
 
